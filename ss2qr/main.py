@@ -20,9 +20,9 @@ port     = str(parameter['server_port'])
 uri = method+':'+password+'@'+hostname+':'+port
 uri_base64 = head+base64.b64encode(bytes(uri,'utf-8')).decode('utf-8')
 
-# #%% QR code
-# q = pyqrcode.create(uri_base64)
-# q.png('ssqrcode.png',scale=15)
+#%% QR code
+q = pyqrcode.create(uri_base64)
+q.png('ssqrcode.png',scale=15)
 
 ter_cmd = 'sudo sserver -p ' + str(parameter['server_port']) +' -k ' + parameter['password'] +' -m rc4-md5 -d start'
 os.system(ter_cmd)
