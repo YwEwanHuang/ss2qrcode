@@ -1,8 +1,8 @@
 {
-    "server":"192.168.1.1",
-    "server_port":3616,
+    "server":"104.155.228.196",
+    "server_port":55556,
     "local_port":1080,
-    "password":"ewansvpn",
+    "password":"hywewanseeworld",
     "timeout":600,
-    "method":"chacha20-ietf-poly1305"
+    "method":"rc4-md5"
 }
