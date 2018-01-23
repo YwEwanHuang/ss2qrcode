@@ -1,8 +1,0 @@
-{
-    "server":"104.155.228.196",
-    "server_port":55556,
-    "local_port":1080,
-    "password":"hywewanseeworld",
-    "timeout":600,
-    "method":"rc4-md5"
-}
