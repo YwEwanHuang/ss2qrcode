@@ -18,6 +18,7 @@ hostname = parameter['server']
 port     = str(parameter['server_port'])
 uri = method+':'+password+'@'+hostname+':'+port
 uri_base64 = head+base64.b64encode(bytes(uri,'utf-8')).decode('utf-8')
+cf.close()
 
 #%% QR code
 q = pyqrcode.create(uri_base64)
